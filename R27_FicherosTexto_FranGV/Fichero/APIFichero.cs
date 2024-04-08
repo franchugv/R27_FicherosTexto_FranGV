@@ -18,7 +18,7 @@ namespace R27_FicherosTexto_FranGV.Fichero
 
 
 
-        public static float OntenerDolaraEuro()
+        public static float ObtenerDolaraEuro()
         {
             string aux;
             StreamReader lector;
@@ -37,12 +37,13 @@ namespace R27_FicherosTexto_FranGV.Fichero
             return dato;
         }
 
-        public static float OntenerEruroADolar()
+        public static float ObtenerEruroADolar()
         {
             string aux;
             StreamReader lector;
             float dato = 0.0f;
             // Validar si el fichero existe
+            if (!File.Exists(RUTA)) CrearFichero();
 
             lector = File.OpenText(RUTA);
             aux = lector.ReadLine();    // Asignar contenido del fichero a aux
