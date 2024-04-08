@@ -1,4 +1,5 @@
-﻿using R27_FicherosTexto_FranGV.Fichero;
+﻿using R27_FicherosTexto_FranGV.Calcular;
+using R27_FicherosTexto_FranGV.Fichero;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,6 @@ namespace R27_FicherosTexto_FranGV.Principal
             OpcionesPrincipal opcion = OpcionesPrincipal.Salir;
             bool esValido;
             string mensaje = "";
-            APIFichero.Agregar(User);
 
             do {
                 UIPrincipal.MenuPrincipal();
@@ -29,14 +29,21 @@ namespace R27_FicherosTexto_FranGV.Principal
                     {
                         case OpcionesPrincipal.Salir:
                             break;
-
                         case OpcionesPrincipal.Consultar:
+                            Metodos.MostrarDatos(APIFichero.ConsultarFichero());
+                            Metodos.Pausa();
                             break;
                         case OpcionesPrincipal.Modificar:
+                            ControladorModificar.ControladorModificar.ControladorM();
                             break;
                         case OpcionesPrincipal.EuroDolar:
+                            Console.WriteLine(LogicaNegocio.CalcularEurosaDolar());
+                            Metodos.Pausa();
                             break;
                         case OpcionesPrincipal.DolarEuro:
+                            Console.WriteLine(LogicaNegocio.CalcularDolaraEuros());
+                            Metodos.Pausa();
+
                             break;
 
                     }

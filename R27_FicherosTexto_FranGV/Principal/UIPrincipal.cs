@@ -12,10 +12,10 @@ namespace R27_FicherosTexto_FranGV.Principal
         {
             Console.Clear();
             Console.WriteLine("\t0. Salír");
-            Console.WriteLine("\t1. Crear");
-            Console.WriteLine("\t2. Agregar Cantidad");
-            Console.WriteLine("\t3. Consultar");
-            Console.WriteLine("\t4. Modificar");
+            Console.WriteLine("\t1. Consultar");
+            Console.WriteLine("\t2. Modificar");
+            Console.WriteLine("\t3. Euro a Dollar");
+            Console.WriteLine("\t4. Dolar a Euro");
             Console.Write("\nElija una opción (0-4): ");
 
 

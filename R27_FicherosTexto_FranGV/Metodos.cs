@@ -8,7 +8,7 @@ namespace R27_FicherosTexto_FranGV
 {
     public static class Metodos
     {
-        public static float CaptarNum()
+        public static float CaptarNum(string text)
         {
             // Recursos
 
@@ -26,7 +26,7 @@ namespace R27_FicherosTexto_FranGV
                     esCorrecto = true;
 
 
-                    Console.Write("Escriba una cantidad: ");
+                    Console.Write($"Escriba {text}: ");
 
                     aux = Console.ReadLine();
 
@@ -132,6 +132,18 @@ namespace R27_FicherosTexto_FranGV
 
             return opcion;
 
+        }
+
+        public static void Pausa()
+        {
+            Console.Write("Pulse Enter para continuar...");
+            Console.ReadLine();
+            Console.Clear();
+        }
+
+        public static void MostrarDatos(string dato)
+        {
+            Console.WriteLine(dato);
         }
     }
 }

@@ -73,5 +73,19 @@ namespace R27_FicherosTexto_FranGV.Fichero
             escritor.WriteLine(DOLAREURO);
             escritor.Close();
         }
+
+        public static string ConsultarFichero()
+        {
+            StreamReader Lector;
+            string cadena;
+
+            Lector = File.OpenText(RUTA);
+            cadena = Lector.ReadLine();
+            cadena += "\n";
+            cadena += Lector.ReadLine();
+
+            return cadena;
+           
+        }
     }
 }
