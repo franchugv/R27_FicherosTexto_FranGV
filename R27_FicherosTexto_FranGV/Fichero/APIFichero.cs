@@ -12,10 +12,22 @@ namespace R27_FicherosTexto_FranGV.Fichero
 
         const string RUTA = "config.ead";
 
+        public static float ObtenerEruroADolar()
+        {
+            string aux;
+            StreamReader lector;
+            float dato = 0.0f;
+            // Validar si el fichero existe
+            if (!File.Exists(RUTA)) CrearFichero();
 
+            lector = File.OpenText(RUTA);
+            aux = lector.ReadLine();    // Asignar contenido del fichero a aux
+            lector.Close();
 
+            dato = Convert.ToSingle(aux);
 
-
+            return dato;
+        }
 
 
         public static float ObtenerDolaraEuro()
@@ -36,25 +48,6 @@ namespace R27_FicherosTexto_FranGV.Fichero
 
             return dato;
         }
-
-        public static float ObtenerEruroADolar()
-        {
-            string aux;
-            StreamReader lector;
-            float dato = 0.0f;
-            // Validar si el fichero existe
-            if (!File.Exists(RUTA)) CrearFichero();
-
-            lector = File.OpenText(RUTA);
-            aux = lector.ReadLine();    // Asignar contenido del fichero a aux
-            lector.Close();
-
-            dato = Convert.ToSingle(aux);
-
-            return dato;
-        }
-
-
 
 
         public static void ModificarDatos(float euroDolar, float DolarEuro)
