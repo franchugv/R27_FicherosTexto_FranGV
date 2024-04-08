@@ -50,7 +50,7 @@ namespace R27_FicherosTexto_FranGV
         }
 
 
-        public static string CaptarCadena()
+        public static string CaptarCadena(string text)
         {
             // Recursos
 
@@ -67,7 +67,7 @@ namespace R27_FicherosTexto_FranGV
                     esCorrecto = true;
 
 
-                    Console.Write("Escriba una cantidad: ");
+                    Console.Write($"Escriba {text}: ");
 
                     cadena = Console.ReadLine();
 

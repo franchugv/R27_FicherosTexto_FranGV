@@ -12,14 +12,18 @@ namespace R27_FicherosTexto_FranGV.Fichero
         {
             string cadena;
 
-            cadena = Metodos.CaptarCadena();
+            cadena = Metodos.CaptarCadena("un nombre");
 
             User = File.CreateText(cadena);
         }
 
         public static void Modificar(StreamWriter User) 
-        { 
-            
+        {
+            string cadena;
+
+            cadena = Metodos.CaptarCadena("una cantidad");
+
+            User.Write(cadena);
         }
 
         public static void AñadirCantidad(StreamWriter User)
