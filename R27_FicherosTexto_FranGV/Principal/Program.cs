@@ -1,6 +1,4 @@
-﻿using R27_FicherosTexto_FranGV.Principal;
-
-namespace R27_FicherosTexto_FranGV
+﻿namespace R27_FicherosTexto_FranGV.Principal
 {
     internal class Program
     {

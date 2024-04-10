@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using R27_FicherosTexto_FranGV.Principal;
 
 namespace R27_FicherosTexto_FranGV.Calcular
 {

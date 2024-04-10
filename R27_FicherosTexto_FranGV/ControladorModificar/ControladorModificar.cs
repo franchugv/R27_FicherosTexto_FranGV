@@ -1,4 +1,5 @@
 ﻿using R27_FicherosTexto_FranGV.Fichero;
+using R27_FicherosTexto_FranGV.Principal;
 using System;
 using System.Collections.Generic;
 using System.Linq;

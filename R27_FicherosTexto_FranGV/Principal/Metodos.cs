@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace R27_FicherosTexto_FranGV
+namespace R27_FicherosTexto_FranGV.Principal
 {
     public static class Metodos
     {
@@ -35,8 +35,8 @@ namespace R27_FicherosTexto_FranGV
                     cantidad = Convert.ToSingle(aux);
 
                 }
-                catch(Exception error) 
-                { 
+                catch (Exception error)
+                {
                     mError = error.Message;
                     esCorrecto = false;
                 }
