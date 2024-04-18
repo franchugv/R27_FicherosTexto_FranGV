@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace R27_FicherosTexto_FranGV.Principal
 {
-    public enum OpcionesPrincipal :byte { Salir, Consultar, Modificar, EuroDolar, DolarEuro }
+    public enum OpcionesPrincipal :byte { Salir, Consultar, Modificar, Convertir }
     public static class Controlador
     {
         public static void ControladorPrincipal()
@@ -36,16 +36,12 @@ namespace R27_FicherosTexto_FranGV.Principal
                         case OpcionesPrincipal.Modificar:
                             ControladorModificar.ControladorModificar.ControladorM();
                             break;
-                        case OpcionesPrincipal.EuroDolar:
-                            Console.WriteLine(LogicaNegocio.CalcularEurosaDolar());
-                            Metodos.Pausa();
+                        case OpcionesPrincipal.Convertir:
+                            Calcular.ControoladorConvertir.ControladorC();
                             break;
-                        case OpcionesPrincipal.DolarEuro:
 
-                            Console.WriteLine(LogicaNegocio.CalcularDolaraEuros());
-                            Metodos.Pausa();
 
-                            break;
+                          
 
                     }
 

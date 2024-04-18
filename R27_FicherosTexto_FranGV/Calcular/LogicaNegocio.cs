@@ -41,6 +41,19 @@ namespace R27_FicherosTexto_FranGV.Calcular
 
             return num;
         }
+        
+        public static float CalculoConversion(float num, float conversion, string text)
+        {
+            float calculo;
+
+            num = Metodos.CaptarNum($"la cantidad en {text}");
+            calculo = conversion;
+
+            num = num * calculo;
+
+            return num;
+        }
+
 
        
     }

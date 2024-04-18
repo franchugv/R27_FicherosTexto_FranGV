@@ -14,8 +14,7 @@ namespace R27_FicherosTexto_FranGV.Principal
             Console.WriteLine("\t0. Salír");
             Console.WriteLine("\t1. Consultar");
             Console.WriteLine("\t2. Modificar");
-            Console.WriteLine("\t3. Euro a Dollar");
-            Console.WriteLine("\t4. Dolar a Euro");
+            Console.WriteLine("\t3. Convertir");
             Console.Write("\nElija una opción (0-4): ");
 
 

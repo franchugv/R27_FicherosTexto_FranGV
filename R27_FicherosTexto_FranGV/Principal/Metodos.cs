@@ -142,6 +142,9 @@ namespace R27_FicherosTexto_FranGV.Principal
         public static void MostrarDatos(string dato)
         {
             Console.WriteLine(dato);
+            Console.Write("\nPulse Enter para continuar...");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }
