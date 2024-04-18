@@ -23,7 +23,6 @@ namespace R27_FicherosTexto_FranGV.Principal
                 esCorrecto = true;
                 try
                 {
-                    esCorrecto = true;
 
 
                     Console.Write($"Escriba {text}: ");
@@ -64,7 +63,6 @@ namespace R27_FicherosTexto_FranGV.Principal
                 esCorrecto = true;
                 try
                 {
-                    esCorrecto = true;
 
 
                     Console.Write($"Escriba {text}: ");

@@ -11,7 +11,7 @@ namespace R27_FicherosTexto_FranGV.Principal
     public enum OpcionesPrincipal :byte { Salir, Consultar, Modificar, EuroDolar, DolarEuro }
     public static class Controlador
     {
-        public static void ControladorPrincipal(StreamWriter User, StreamReader UserLector)
+        public static void ControladorPrincipal()
         {
             OpcionesPrincipal opcion = OpcionesPrincipal.Salir;
             bool esValido;
@@ -41,6 +41,7 @@ namespace R27_FicherosTexto_FranGV.Principal
                             Metodos.Pausa();
                             break;
                         case OpcionesPrincipal.DolarEuro:
+
                             Console.WriteLine(LogicaNegocio.CalcularDolaraEuros());
                             Metodos.Pausa();
 

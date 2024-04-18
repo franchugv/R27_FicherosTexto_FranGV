@@ -12,7 +12,7 @@ namespace R27_FicherosTexto_FranGV.Fichero
 
         const string RUTA = "config.ead";
 
-        public static float ObtenerEruroADolar()
+        public static float ObtenerEuroADolar()
         {
             string aux;
             StreamReader lector;

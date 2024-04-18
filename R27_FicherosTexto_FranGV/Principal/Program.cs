@@ -6,13 +6,9 @@
         {
             // RECURSOS
 
-            StreamWriter usuarioEscritor = null;
-            StreamReader usuarioLector = null;
-
-
             // Controlador
 
-            Controlador.ControladorPrincipal(usuarioEscritor, usuarioLector);
+            Controlador.ControladorPrincipal();
 
 
         }

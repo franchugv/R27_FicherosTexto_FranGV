@@ -16,13 +16,15 @@ namespace R27_FicherosTexto_FranGV.Calcular
             float num;
             float calculo;
 
-            num = Metodos.CaptarNum("la cantidad que en Euros");
-            calculo = Fichero.APIFichero.ObtenerEruroADolar();
+            num = Metodos.CaptarNum("la cantidad en Euros");
+            calculo = Fichero.APIFichero.ObtenerEuroADolar();
 
             num = num * calculo;
 
             return num;
         }
+
+
 
 
         public static float CalcularDolaraEuros()
@@ -32,12 +34,14 @@ namespace R27_FicherosTexto_FranGV.Calcular
             float num;
             float calculo;
 
-            num = Metodos.CaptarNum("la cantidad que en Dollares");
+            num = Metodos.CaptarNum("la cantidad en Dolares");
             calculo = Fichero.APIFichero.ObtenerDolaraEuro();
 
             num = num * calculo;
 
             return num;
         }
+
+       
     }
 }
